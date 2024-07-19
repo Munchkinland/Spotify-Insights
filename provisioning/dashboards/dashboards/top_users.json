@@ -1,0 +1,28 @@
+{
+    "annotations": {
+      "list": []
+    },
+    "panels": [
+      {
+        "type": "table",
+        "title": "Top Users",
+        "targets": [
+          {
+            "type": "simple-json",
+            "refId": "A",
+            "url": "/spotify/user"
+          }
+        ],
+        "gridPos": {
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 10
+        }
+      }
+    ],
+    "title": "Top Users Dashboard",
+    "schemaVersion": 30,
+    "version": 1
+  }
+  

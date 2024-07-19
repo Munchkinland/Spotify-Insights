@@ -1,0 +1,7 @@
+apiVersion: 1
+datasources:
+  - name: SimpleJson
+    type: grafana-simple-json-datasource
+    access: proxy
+    url: http://flask-api:5000
+    isDefault: true

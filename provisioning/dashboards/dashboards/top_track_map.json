@@ -1,0 +1,40 @@
+{
+    "annotations": {
+      "list": []
+    },
+    "panels": [
+      {
+        "type": "grafana-worldmap-panel",
+        "title": "Top Tracks Map",
+        "targets": [
+          {
+            "type": "simple-json",
+            "refId": "A",
+            "url": "/spotify/user/top/tracks"
+          }
+        ],
+        "gridPos": {
+          "x": 0,
+          "y": 0,
+          "w": 24,
+          "h": 10
+        },
+        "options": {
+          "center": {
+            "lat": 0,
+            "lon": 0
+          },
+          "maxZoom": 1,
+          "minZoom": 1,
+          "showLegend": true,
+          "circleMaxSize": 10,
+          "circleMinSize": 2,
+          "unitFormat": "short"
+        }
+      }
+    ],
+    "title": "Top Tracks World Map",
+    "schemaVersion": 30,
+    "version": 1
+  }
+  

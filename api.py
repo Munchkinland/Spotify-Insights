@@ -4,6 +4,10 @@ from spotify_client import SpotifyClient
 app = Flask(__name__)
 spotify_client = SpotifyClient()
 
+@app.route('/')
+def home():
+    return '¡Bienvenido a la API de Spotify Insights!'
+
 @app.route('/spotify/track/<track_id>', methods=['GET'])
 def get_track(track_id):
     track_data = spotify_client.get_track_data(track_id)
@@ -35,4 +39,4 @@ def get_user_top_artists():
     return jsonify(top_artists)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5001)

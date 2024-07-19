@@ -1,0 +1,28 @@
+{
+    "annotations": {
+      "list": []
+    },
+    "panels": [
+      {
+        "type": "table",
+        "title": "Top Artists",
+        "targets": [
+          {
+            "type": "simple-json",
+            "refId": "A",
+            "url": "/spotify/user/top/artists"
+          }
+        ],
+        "gridPos": {
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 10
+        }
+      }
+    ],
+    "title": "Top Artists Dashboard",
+    "schemaVersion": 30,
+    "version": 1
+  }
+  
