@@ -1,0 +1,21 @@
+version: '3'
+services:
+  flask-api:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - SPOTIFY_CLIENT_ID=your_client_id
+      - SPOTIFY_CLIENT_SECRET=your_client_secret
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "4000:4000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    environment:
+      - GF_INSTALL_PLUGINS=grafana-simple-json-datasource
+
+volumes:
+  grafana-storage:
